@@ -2,6 +2,9 @@
 
 Simple task manager home assignment (React frontend + Express(js) backend)
 
+<img width="1271" height="627" alt="image" src="https://github.com/user-attachments/assets/63ff5ae3-f1b1-4c5b-a79a-ac6a5b1a383d" />
+
+
 ## Backend Setup
 
 1. cd backend
