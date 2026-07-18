@@ -1,0 +1,181 @@
+/* css used https://developer.mozilla.org/en-US/docs/Web/CSS https://developer.mozilla.org/en-US/docs/Web/CSS  */
+/* infinite carousel https://blog.logto.io/css-only-infinite-scroll */
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-slide {
+  flex-shrink: 0;
+  width: 250px;
+  margin-right: 16px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/*form*/
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.task-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #357abd;
+}
+
+/*filter*/
+
+.task-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-filter button {
+  padding: 6px 14px;
+  border: 1px solid #4a90e2;
+  background-color: white;
+  color: #4a90e2;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-filter button:hover {
+  background-color: #eaf2fc;
+}
+
+.task-filter button.active {
+  background-color: #4a90e2;
+  color: white;
+}
+
+/*task card*/
+
+.task-item {
+  background-color: white;
+  border-radius: 6px;
+  padding: 16px;
+  border-left: 5px solid #ccc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.task-item h3.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-item p {
+  color: #555;
+  font-size: 14px;
+}
+
+.priority-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: capitalize;
+  background-color: #eee;
+}
+
+.priority-low .priority-badge {
+  background-color: #d4f5d4;
+  color: #2e7d32;
+}
+
+.priority-medium .priority-badge {
+  background-color: #fff3cd;
+  color: #997404;
+}
+
+.priority-high .priority-badge {
+  background-color: #f8d7da;
+  color: #c0392b;
+}
+
+.priority-low {
+  border-left-color: #2e7d32;
+}
+
+.priority-medium {
+  border-left-color: #997404;
+}
+
+.priority-high {
+  border-left-color: #c0392b;
+}
+
+.task-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.task-actions button:hover {
+  background-color: #f0f0f0;
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+}

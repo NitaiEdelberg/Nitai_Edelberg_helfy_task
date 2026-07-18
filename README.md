@@ -34,7 +34,7 @@ Simple task manager home assignment (React frontend + Express(js) backend)
 - descided to make it simple as it's a home task assignemnt: should have use tasks as map for better data structures opperations, and chek other scnerios.
 
 ## Time spent
-
+(including testing)
 - Backend (routes + server): ~45 minutes
 - Frontend components (form, list, item, filter): around 70 minutes
 - Carousel: ~40 min
